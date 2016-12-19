@@ -1,0 +1,39 @@
+{
+  "name": "nochat",
+  "version": "0.0.1",
+  "description": "main directory of nochat app",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-kowalczyk/nochat.git"
+  },
+  "keywords": [
+    "nochat",
+    "communicator",
+    "javascript",
+    "js",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-kowalczyk/nochat/issues"
+  },
+  "homepage": "https://github.com/j-kowalczyk/nochat#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
