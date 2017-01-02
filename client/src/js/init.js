@@ -9,8 +9,9 @@ $('form').submit(function(){
     m.val('');
     return false;
 });
+
 socket.on('chat message', function(msg){
     "use strict";
     $('#messages').append($('<li>').text(msg));
-});
+}); 
 
