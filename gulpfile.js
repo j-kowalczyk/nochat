@@ -17,9 +17,9 @@ var concat = require('gulp-concat');
 const CLIENT_PATH = 'client';
 
 gulp.task('sass', function () {
+    console.log('SASSS');
     return gulp.src(CLIENT_PATH+'/src/sass/**/*.sass')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(CLIENT_PATH+'/dist/css'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(concatCss("style.css"))
         .pipe(gulp.dest(CLIENT_PATH+'/dist/css'));
