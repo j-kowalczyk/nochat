@@ -20,8 +20,8 @@ gulp.task('sass', function () {
     console.log('SASSS');
     return gulp.src(CLIENT_PATH+'/src/sass/**/*.sass')
         .pipe(sass().on('error', sass.logError))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(concatCss("style.css"))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest(CLIENT_PATH+'/dist/css'));
 });
 
